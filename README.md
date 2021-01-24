@@ -3,6 +3,7 @@
 Node.jsの開発を行うためのテンプレートです。<BR>
 主に次のものをサポートしています。
 
+* Babel(ECMAScript 2015+)
 * jest
 * eslint
 * prettier
@@ -23,6 +24,9 @@ Node.jsの開発を行うためのテンプレートです。<BR>
 * jsdoc
 * @babel/core
 * @babel/preset-env
+* @babel/plugin-transform-arrow-functions
+* @babel/polyfill
+* @babel/cli
 * rimraf
 * husky
 * lint-staged
@@ -40,6 +44,16 @@ Node.jsの開発を行うためのテンプレートです。<BR>
 ## 設定
 
 各モジュールの設定について説明します。
+
+### Babel
+
+* CLI
+* preset-env
+* plugin-transform-arrow-functions
+
+#### 設定ファイル
+
+* [babel.config.json](/babel.config.json)
 
 ### jest
 
@@ -85,7 +99,7 @@ Node.jsの開発を行うためのテンプレートです。<BR>
 
 * [package.json](/package.json)
 
-## 実行/テスト
+## ビルド及び実行/テスト
 
 出力ディレクトリは `./dist` です。
 
@@ -93,6 +107,13 @@ Node.jsの開発を行うためのテンプレートです。<BR>
 
 ```
 yarn clean
+```
+### 実行する
+
+Babelでトランスパイルします。
+
+```
+yarn build
 ```
 
 ### 実行する
@@ -145,6 +166,6 @@ yarn jsdoc
 
 * [Node.js 日本語](https://nodejs.org/ja/)
 * [MDN WebDocs JavaScript 日本語](https://developer.mozilla.org/ja/docs/Web/JavaScript)
-* [BABEL Docs](https://babeljs.io/docs/en/)
+* [Babel Docs](https://babeljs.io/docs/en/)
 * [JEST 日本語](https://jestjs.io/ja/)
 * [ESLint rules](https://eslint.org/docs/rules/)
