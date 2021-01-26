@@ -9,9 +9,13 @@ Node.jsの開発を行うためのテンプレートです。<BR>
 * prettier
 * jsdoc
 
-## dev dependencies modules.
+## dependencies modules.
 
 次のモジュールは [package.json](/package.json) で管理しています。
+
+### dependencies
+
+### devDependencies
 
 * node-dev
 * jest
@@ -169,3 +173,7 @@ yarn jsdoc
 * [Babel Docs](https://babeljs.io/docs/en/)
 * [JEST 日本語](https://jestjs.io/ja/)
 * [ESLint rules](https://eslint.org/docs/rules/)
+* [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [jQuery JavaScript Style Guide](https://contribute.jquery.org/style-guide/js/)
+* [Node.js Style Guide](https://github.com/felixge/node-style-guide)
