@@ -1,19 +1,23 @@
 module.exports = {
   root: true,
   env: {
+    browser: true,
     es6: true,
     node: true,
-    'jest/globals': true
+    'jest/globals': true,
   },
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2019,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      jsx: true,
+    },
   },
-  plugins: [
-    'jest',
-  ],
+  plugins: ['react', 'jest'],
   extends: [
     'eslint:recommended',
+    'plugin:react/recommended',
     'plugin:jest/all',
     'plugin:prettier/recommended',
   ],
